@@ -1,0 +1,22 @@
+{# Ce fichier est un template de test #}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+        {% block title %}
+        Welcome!
+        {% endblock %}
+        </title>
+        {% block stylesheets %}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+        Bienvenue {{qqch}}
+        Votre numero gagnant est le {{number}}
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
