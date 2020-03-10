@@ -1,0 +1,25 @@
+{% extends "includes/base_front.html.twig" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block content %}
+	<h1>UNE ERREUR GRAVISSIME S'EST PRODUITE</h1>
+	<h2>Code Erreur : {{ errCode }}</h2>
+	<h2>Message : {{ errMess }}</h2>
+
+	<p>Eteignez votre ordinateur et sortez immédiatement de la pièce</p>
+
+	<ul>
+		<li>N'appelez pas l'administrateur réseau</li>
+		<li>Ne téléphonez pas à un ami</li>
+		<li>Contactez le <b>15</b></li>
+
+	</ul>
+
+{% endblock %}
+
+{% block footer %}
+	{{ parent() }}
+{% endblock %}

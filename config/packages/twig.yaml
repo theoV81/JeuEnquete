@@ -3,3 +3,8 @@ twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
     exception_controller: null
+    globals:
+        nom: "Grand jeu d'enquete CCI"
+        contactMail: "vialatheo@hotmail.fr"
+        coupables: ["fifi","riri","loulou"]
+        affiche_debug: true

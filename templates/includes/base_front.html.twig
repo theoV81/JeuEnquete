@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+                <link rel="stylesheet" type="test/css" href="{{ asset('css/style.css') }}"/>
+            	<link rel="stylesheet" type="text/css" href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}" />
+
+        {% endblock %}
+
+    </head>
+    <body>
+        {% block body %}
+            <header>
+                {% block header %}
+                    {% include('includes/header.html.twig') %}
+                {% endblock %}
+            </header>
+            <div id="content">
+                {% block content %}
+                    
+                {% endblock %}
+            </div>
+     
+        <div id="footer">
+        
+            {% block footer %}
+            
+                Copyright 2011 by <a href="http://domain.invalid/">you</a>.
+            {%include('includes/footer.html.twig')%}
+            {% endblock %}
+        
+        </div>
+        
+    {% endblock %}
+    
+    {% block javascripts %}
+        <script src="{{ asset('javascript/test.js') }}" type="text/javascript"></script>
+    {% endblock %}
+    </body>
+</html>

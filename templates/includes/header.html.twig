@@ -1,0 +1,12 @@
+<div class="jumbotron">
+  <h1 class="display-4">{{ nom }}</h1>
+  <p class="lead">Trouver qui est le coupable ! Tel va être votre objectif ! Serez-vous à la hauteur ? En combien de coups parviendrez-vous à identifier l'auteur du forfait ?</p>
+  <hr class="my-4">
+  <p>Quelqu'un a subtilisé les chocolatines de Alain Vayssette ! Trouvez-le ! Posez les questions qui vous permettront d'établir le portait-robot.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" mailto="{{ contactMail }}" role="button" title="Ecrivez à l'auteur">Pour en savoir plus sur ce jeu</a>
+  </p>
+</div>
+    {% for coupable in coupables %}
+        <li>{{ coupable }}</li>
+    {% endfor %}

@@ -1,0 +1,11 @@
+    
+    {% extends "includes/base_front.html.twig" %}
+
+        {% block body %}
+        {{parent()}}
+        <div class="bleu">
+        Bienvenue {{qqch}}
+        Votre numero <span class="bleu">gagnant</span> est le {{number}}
+        </div>
+        {% endblock %}
+
